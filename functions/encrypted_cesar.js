@@ -5,6 +5,12 @@ function getSum(asc_code, sum) {
 	return tot > 122 ? tot - 26 : tot;
 }
 
+/**
+ * Encrypt Phrases using Cesar Encrypt
+ * @constructor
+ * @param {string} input - Phrase
+ * @param {string} uni_sum - sum unit
+ */
 function encrypt(input, uni_sum) {
 	input = input.toLowerCase();
 	let newString = '';
@@ -21,5 +27,4 @@ function encrypt(input, uni_sum) {
 	return newString;
 }
 
-console.log("DECODED", "abcz");
-console.log("ENCODED", encrypt("abcz", 3));
+module.exports = encrypt;
