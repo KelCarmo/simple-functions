@@ -7,7 +7,7 @@ function getSum(asc_code, sum) {
 
 /**
  * Encrypt Phrases using Cesar Encrypt
- * @constructor
+ * @func
  * @param {string} input - Phrase
  * @param {string} uni_sum - sum unit
  */
